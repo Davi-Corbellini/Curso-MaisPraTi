@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.app-container {
+  border: 2px solid black;
+  width: 600px;
+  margin-left: 30%;
+  margin-top: 5%;
+  border: 2px solid #A0A0A0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mensagem {
+  display: flex;
+  flex-direction: row;
+}
+
+#concluido,
+#andamento,
+#pendente,
+#total {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#verde, #vermelha, #amarela, #cinza {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#verde { background-color: green; }
+#vermelha { background-color: red; }
+#amarela { background-color: yellow; }
+#cinza { background-color: gray; }
+
+#conText,
+#anText,
+#penText,
+#totalText {
+  margin-left: 10px;
+  color: black;
+  padding-top: 15px
+}
+
+.inicio {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+
+
+.app-container h1 {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  display: inline-block;
+}
+
+#lista li {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 8px;
+  width: 550px;
+  border: 1px solid black;
+  border: 1px solid #A0A0A0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+#lista li select {
+  margin-left: auto;
+}
+
+.botoesDiv {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+#lista li button {
+  margin-left: 10px;
+}
+
+#lista li select {
+  margin-left: 5px;
+}
+
+button {
+  background-color: #8C8C8C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7A7A7A;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  background-color: #F0F0F0;
+  color: #333;
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #A0A0A0;
+}
+
+#info {
+  text-align: center;
+}
